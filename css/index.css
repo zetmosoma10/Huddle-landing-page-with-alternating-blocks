@@ -107,6 +107,25 @@ p {
   }
 }
 
+.callout {
+  box-shadow: 0px -5px 8px rgba(0, 0, 0, 0.1);
+  min-width: 20rem;
+  max-width: 80rem;
+  border-radius: 15px;
+  text-align: center;
+  padding: 4rem 2.5rem;
+}
+.callout h2 {
+  font-size: 1.8rem;
+  margin-bottom: 2.4rem;
+}
+@media (min-width: 980px) {
+  .callout h2 {
+    font-size: 3.2rem;
+    margin-bottom: 3.2rem;
+  }
+}
+
 .social {
   display: flex;
   align-items: center;
@@ -163,10 +182,11 @@ p {
 
 .btn-callout {
   font-size: 1rem;
-  max-width: 40rem;
+  width: 20rem;
 }
-@media (min-width: 768px) {
+@media (min-width: 980px) {
   .btn-callout {
+    width: 40rem;
     font-size: 2rem;
     padding: 2.4rem 0;
     border-radius: 40px;
