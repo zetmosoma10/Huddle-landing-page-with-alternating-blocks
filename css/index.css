@@ -65,3 +65,75 @@ p {
   border-radius: 100%;
   margin-right: 12px;
 }
+
+.btn, .btn-nav, .btn-pink, .btn-callout, .btn-hero {
+  font-weight: bold;
+  outline: none;
+  border: 0;
+  font-family: "Open Sans", sans-serif;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.btn a, .btn-nav a, .btn-pink a, .btn-callout a, .btn-hero a {
+  text-decoration: none;
+}
+
+.btn-pink, .btn-callout, .btn-hero {
+  border-radius: 20px;
+  background: hsl(322, 100%, 66%);
+  padding: 1.3rem 0;
+  width: 100%;
+}
+.btn-pink a, .btn-callout a, .btn-hero a {
+  color: white;
+}
+.btn-pink:hover, .btn-callout:hover, .btn-hero:hover {
+  background: #ff85d2;
+}
+
+.btn-hero {
+  font-size: 1.2rem;
+  max-width: 28rem;
+}
+@media (min-width: 768px) {
+  .btn-hero {
+    font-size: 1.4rem;
+    padding: 1.7rem 0;
+    border-radius: 28px;
+  }
+}
+
+.btn-callout {
+  font-size: 1rem;
+  max-width: 40rem;
+}
+@media (min-width: 768px) {
+  .btn-callout {
+    font-size: 2rem;
+    padding: 2.4rem 0;
+    border-radius: 40px;
+  }
+}
+
+.btn-nav {
+  font-size: 1rem;
+  background: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  padding: 0.7rem 0;
+  width: 9.6rem;
+}
+.btn-nav a {
+  color: hsl(192, 100%, 9%);
+}
+.btn-nav a:hover {
+  color: hsl(208, 11%, 55%);
+}
+@media (min-width: 768px) {
+  .btn-nav {
+    font-size: 1.4rem;
+    border-radius: 24px;
+    padding: 1.7rem 0;
+    width: 20rem;
+  }
+}
