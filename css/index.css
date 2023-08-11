@@ -86,6 +86,22 @@ p {
   }
 }
 
+.card:nth-of-type(1) .card__image {
+  order: 2; /* Move the image to the second column for the first card */
+}
+
+.card:nth-of-type(1) .card__content {
+  order: 1; /* Move the content to the first column for the first card */
+}
+
+.card:nth-of-type(3) .card__image {
+  order: 2; /* Move the image to the first column for the third card */
+}
+
+.card:nth-of-type(3) .card__content {
+  order: 1; /* Move the content to the second column for the third card */
+}
+
 .grid {
   display: grid;
   align-content: center;
@@ -103,9 +119,6 @@ p {
 @media (min-width: 980px) {
   .grid-1x2 {
     grid-template-columns: repeat(2, 1fr);
-  }
-  .grid-1x2 .grid:nth-of-type(odd) .card__image {
-    order: -1;
   }
 }
 
@@ -241,6 +254,22 @@ p {
   .card .card__content {
     text-align: left;
   }
+}
+
+.card:nth-of-type(1) .card__image {
+  order: 2; /* Move the image to the second column for the first card */
+}
+
+.card:nth-of-type(1) .card__content {
+  order: 1; /* Move the content to the first column for the first card */
+}
+
+.card:nth-of-type(3) .card__image {
+  order: 2; /* Move the image to the first column for the third card */
+}
+
+.card:nth-of-type(3) .card__content {
+  order: 1; /* Move the content to the second column for the third card */
 }
 
 header {
