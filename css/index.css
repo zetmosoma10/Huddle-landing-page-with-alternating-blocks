@@ -211,7 +211,7 @@ p {
 .btn-nav a:hover {
   color: hsl(208, 11%, 55%);
 }
-@media (min-width: 768px) {
+@media (min-width: 980px) {
   .btn-nav {
     font-size: 1.4rem;
     border-radius: 24px;
@@ -271,5 +271,19 @@ p {
   .hero__content h1 {
     margin-bottom: 3.2rem;
     line-height: 60px;
+  }
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav img {
+  width: 10rem;
+}
+@media (min-width: 980px) {
+  nav img {
+    width: 20rem;
   }
 }
